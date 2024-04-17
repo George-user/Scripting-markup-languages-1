@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="style.css" rel="stylesheet">
+    <title>Лаба номер 7</title>
+</head>
+<body>
+    <form name="data">
+        <section align="center">
+        <textarea name="faculty" placeholder="Факультет информационных технологий"></textarea><br><br>
+            <input type="text" placeholder="Фамилия" id = "surname"> <br>
+            <input type="text" placeholder="Имя"> <br>
+          <br>
+          <b>Специальность</b>
+            <select id = "special">
+                <option>ПОИТ</option>
+                <option>ИСиТ</option>
+                <option>ПОИБМС</option>
+                <option>ДЭВИ</option>
+            </select> <br><br>
+
+            <b>Курс</b> <br>
+            <input type="radio" name="cource" value="1"> 1
+            <input type="radio" name="cource" value="2"> 2
+            <input type="radio" name="cource" value="3"> 3
+            <input type="radio" name="cource" value="4"> 4
+
+
+            <br><b>Предметы</b><br>
+            <input type="checkbox" name="subject", value="ОИТ"> ОИТ
+            <input type="checkbox" name="subject", value="ОАП"> ОАП
+            <input type="checkbox" name="subject", value="История"> История
+            <input type="checkbox" name="subject", value="Физика"> Физика
+            <input type="checkbox" name="subject", value="Математика"> Математика>
+
+            <br><br>
+            <input class="but3" type="submit" value="submit">
+            <input class="but2" type="reset" value="reset">
+           <br><br> <input class="but1" type="button" value="Напечатать" onclick="lab7()">
+
+        </section>
+    </form>
+    <script src="lab7.js"></script>
+  
+</body>
+</html>

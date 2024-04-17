@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"> 
+        
+        function table()
+        {
+            
+        
+            let table = document.createElement("table");
+            table.setAttribute("border", 2);
+            table.setAttribute("cellpadding", 6);
+           
+            for (let a = 0; a < 4; a++) {
+                let tr =  document.createElement("tr");
+                for (let b = 0; b < 4; b++) {
+                    let td =  document.createElement("td");
+                 td.textContent += a*b;
+                 tr.appendChild(td);
+                }
+                table.appendChild(tr); 
+            }
+        
+            document.body.appendChild(table);
+           
+           
+        }
+        
+    </script>
+    
+</head>
+<body>
+    <input type="button" value="Начать" onclick="table()">
+   
+    
+        
+</body>
+</html>

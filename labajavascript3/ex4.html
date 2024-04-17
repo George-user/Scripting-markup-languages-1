@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let mystring = "Богатырёв Георгий Сергеевич"; 
+        let mystringToUpperCase =  mystring.toUpperCase(); 
+        let mystringToLowerCase =  mystring.toLowerCase();
+        let mystringUpperLowerCases = mystringToUpperCase + mystringToLowerCase;
+        let words = mystring.split(" "); 
+        let fio = words[0][0] + words[1][0] + words[2][0];
+        document.write("Длина ФИО: ", mystring.length, "<br>"); 
+        document.write("Верхний регистр: ", mystringToUpperCase, "<br>"); 
+        document.write("Нижний регистр: ", mystringToLowerCase, "<br>"); 
+        document.write("Верхний и нижний: ", mystringUpperLowerCases, "<br>");        
+        document.write("ФИО: ", fio, "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

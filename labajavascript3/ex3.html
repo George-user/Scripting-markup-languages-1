@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    arr = [('pow', 'pop', 'push', 'shift', 'round', 'floor', 'sline', 'sort')];
+let arrOfMathMethods = [];
+let arrOfArrayMethods = [];
+for (let i = 0; i < arr.length; i++) {
+	if (Math.hasOwnProperty(arr[i])) 
+		arrOfMathMethods.push(arr[i]);
+	else if (Array.prototype.hasOwnProperty(arr[i]))
+		arrOfArrayMethods.push(arr[i]);
+}
+
+arrOfArrayMethods.push('reverse');
+arrOfMathMethods.push('PI');
+
+document.write( "Исходный массив: " + arr, "<br>" ) ;
+document.write("Массив с методами массива: " + arrOfArrayMethods, "<br>" );
+document.write("Длина массива с методами массива: " + arrOfArrayMethods.length, "<br>");
+document.write("Массив с методами объекта Math: " + arrOfMathMethods), "<br>";
+document.write("Длина массива с методами объекта Math: " + arrOfArrayMethods.length, "<br>");
+    
+</script>
+<body>
+    
+</body>
+</html>

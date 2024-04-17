@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text1 {
+            color: green;
+            font-family: "Times New Roman";
+            font-size: 25px;
+          }
+          .text2 {
+            color: red;
+            font-family: "Times New Roman";
+            font-size: 25px;
+          }
+          .text3 {
+            color: blue;
+            font-family: "Times New Roman";
+            font-size: 25px;
+          }
+          .text4 {
+            color: purple;
+            font-family: "Italic";
+            font-size: 25px;
+          }
+          .text5 {
+            color: rgb(128, 0, 0);
+            font-family: "Times New Roman";
+            font-size: 25px;
+          }
+          .text6 {
+            color: pink;
+            font-family: "Comforta";
+            font-size: 25px;
+          }
+          .text7 {
+            color: rgb(0, 58, 128);
+            font-family: "Comforta";
+            font-size: 25px;
+          }
+        
+
+    </style>
+    
+    <script type="text/javascript">
+       
+function ex1() { 
+    alert("Вас приветствует учебный центр")
+    let name = prompt("Введите своё имя: ", "имя");
+
+    alert("Приятно познакомиться, " + name);
+    let result = confirm("Хотите стать Web дизайнером?");
+    if (result == true) {
+        alert("Учите стили CSS и JavaScript!");
+    } else {
+        alert("Упускаете время!");
+
+    }
+}
+
+
+function ex2() {
+    alert("Результатом сложения строки и числа всегда будет строка");
+    console.log(10+5, "<br>");
+    console.log("10"+"5", "<br>");
+    document.write("5"+22, "<br>");
+    document.write(5+"22", "<br>");
+    document.write("<br><br>");
+}
+
+
+function ex3() {
+
+    var x=3 , y=6794; 
+    var num1 = (35*y-25*x)/5+232; 
+    var num2 = (8*y/x+5*x/y-43)*6; 
+    var negr = x%y  
+     document.write("Первое выражеие равно: " + num1 + "<br>" + "Второе выражение равно: " + negr + "<br>" + "Третье выражение равно: " + num2 + "<br>"); 
+}
+
+
+function ex4() {
+    let num = prompt("Введите число");
+    if ((num < 20 || num > 40) && num !== 15 && num % 5 == 0)
+      alert("Правильное значение");
+    else
+      alert("Неправильное значение");
+}
+
+//Пятое задание
+function ex5() {
+    let a = parseInt(prompt("Введите число А: "));
+    let b = parseInt(prompt("Введите число B: "));
+
+    if (a > b) {
+        alert("число A больше B");
+    } else if (a < b) {
+        alert("число B больше чем А");
+    } else {
+        alert("А равно В");
+    }
+
+    let years = prompt("Введите 4");
+    years == 4 ? alert("Спасибо") : alert("Это не 4.");
+}
+
+//Шестое задание
+function ex6() {
+    let day = new Date().getDay();
+
+    switch(day){
+        case 0:
+            alert("Сегодня воскресень");
+            break;
+        case 1:
+            alert("Сегодня понедельник");
+            break;
+        case 2:
+            alert("Сегодня вторник");
+            break;
+        case 3:
+            alert("Сегодня среда");
+            break;
+        case 4:
+            alert("Сегодня четверг");
+            break;
+        case 5:
+            alert("Сегодня пятница");
+            break;
+        case 6:
+            alert("Сегодня суббота");
+            break;
+    }
+}
+
+//Седьмое задание
+var ex7 = () => {
+        let x = 0b1010;  
+        let y = 0o745; 
+        let z = 0xFF1; 
+        document.write(x, "<br>");
+        document.write(y, "<br>"); 
+        document.write(z, "<br>"); 
+}
+
+
+    </script>
+</head>
+<body>
+    <input class="text1" type="button" value="Начать задание 1" onclick="ex1()">
+    <input class="text2" type="button" value="Начать задание 2 " onclick="ex2()">
+    <input class="text3" type="button" value="Начать задание 3" onclick="ex3()">
+    <input class="text4" type="button" value="Начать задание 4" onclick="ex4()">
+    <input class="text5" type="button" value="Начать задание 5" onclick="ex5()">
+    <input class="text6" type="button" value="Начать задание 6" onclick="ex6()">
+    <input class="text7" type="button" value="Начать задание 7" onclick="ex7()">
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <script type="text/javascript">
+        function circle(){
+ 
+            let a = 1;
+            let b = 3;
+            
+        
+            let table = document.createElement("table");
+            table.setAttribute("border", "3");
+            
+        
+            table.appendChild(document.createElement("th")).innerHTML = "Радиус";
+            table.appendChild(document.createElement("th")).innerHTML = "Площадь круга";
+            table.appendChild(document.createElement("th")).innerHTML = "Длина окружности";
+            do {
+             
+            let tr =  document.createElement("tr");
+            let radius =  document.createElement("td");
+            let area =  document.createElement("td");
+            let lenght =  document.createElement("td");
+        
+                radius.textContent +=  (a).toFixed(2);
+                area.textContent += (a * a * 3.14).toFixed(2);
+                lenght.textContent += (a * 2 * 3.14).toFixed(2);
+        
+                tr.setAttribute("align", "center");
+                tr.appendChild(radius);
+                tr.appendChild(area);
+                tr.appendChild(lenght);
+                table.appendChild(tr);
+        
+                a += 0.3;
+        
+            } while (a < b);
+            
+        document.body.append(table);
+  
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Начать" onclick="circle()">
+</body>
+</html>

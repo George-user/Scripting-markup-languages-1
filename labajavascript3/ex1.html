@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+  /*  let exps = new Array();
+    exps[0] = 6 - Math.pow(Math.PI, 3) + 54 * Math.exp(0);
+    exps[1] = 2 * Math.sin(9876) + Math.cos(16) + 8 - Math.exp(0);
+    exps[2] = 3 * Math.sin(3) + Math.log(12) + Math.SQRT2;
+    exps[3] = 2 * Math.tan(8) + 12 - Math.E + Math.sqrt(54);
+
+    console.log("Максимальный элемент массива: " + Math.max(...exps));
+    console.log("Индекс максимального элемента массива: " + exps.indexOf(Math.max(...exps)));
+    console.log("Минимальный элемент массива: " + Math.min(...exps));
+    console.log("Индекс минимального элемента массива: " + exps.indexOf(Math.min(...exps)));
+*/
+let exps = new Array();
+exps[0] = 6 - Math.pow(Math.PI, 3) + 54 * Math.exp(0);
+exps[1] = 2 * Math.sin(9876) + Math.cos(16) + 8 - Math.exp(0);
+exps[2] = 3 * Math.sin(3) + Math.log(12) + Math.SQRT2;
+exps[3] = 2 * Math.tan(8) + 12 - Math.E + Math.sqrt(54);
+
+let max = exps[0];
+let min = exps[0];
+let maxmass = 0;
+let minmas = 0;
+
+for (let i = 1; i < exps.length; i++) {
+    if (exps[i] > max) {
+        maxmass = i;
+        max = exps[i];
+    }
+    if (exps[i] < min) {
+        minmas = i;
+        min = exps[i];
+    }
+}
+
+console.log("Максимальный элемент массива: " + max);
+console.log("Индекс максимального элемента массива: " + maxmass);
+console.log("Минимальный элемент массива: " + min);
+console.log("Индекс минимального элемента массива: " + minmas);
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

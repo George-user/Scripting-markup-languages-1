@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function ex5() {
+        let date = new Date();  
+        let table = document.createElement("table");  
+        table.setAttribute("border", "1");  
+        let tr = table.appendChild(document.createElement("tr"));  
+         
+            tr = table.appendChild(document.createElement("tr"));  
+            tr.appendChild(document.createElement("td")).innerHTML = "Год";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getFullYear(); 
+         
+            tr = table.appendChild(document.createElement("tr")); 
+            tr.appendChild(document.createElement("td")).innerHTML = "Месяц";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getMonth()+1; 
+            tr = table.appendChild(document.createElement("tr")); 
+            tr.appendChild(document.createElement("td")).innerHTML = "День";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getDate();  
+         
+            tr = table.appendChild(document.createElement("tr")); 
+            tr.appendChild(document.createElement("td")).innerHTML = "Час";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getHours();  
+         
+            tr = table.appendChild(document.createElement("tr")); 
+            tr.appendChild(document.createElement("td")).innerHTML = "Минуты";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getMinutes();  
+         
+            tr = table.appendChild(document.createElement("tr")); 
+            tr.appendChild(document.createElement("td")).innerHTML = "Секунды";  
+            tr.appendChild(document.createElement("td")).innerHTML = date.getSeconds();  
+             
+        document.body.append(table);
+    }
+
+    </script>
+</head>
+<body>
+    <input type="button" value=" начать" onclick="ex5()">
+</body>
+</html>
